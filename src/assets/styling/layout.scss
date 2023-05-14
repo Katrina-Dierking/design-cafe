@@ -1,0 +1,9 @@
+@import './mixins';
+@import './variables';
+
+.layout {
+    width: 100%;
+    @include displayCol();
+    align-items: center;
+    background-color: $primary;
+}
