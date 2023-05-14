@@ -1,0 +1,57 @@
+@import '../../../assets/styling/mixins';
+@import '../../../assets/styling/variables';
+
+.shopnav {
+    @include displayRow();
+    justify-content: space-between;
+    width:100%;
+    background-color: $primary;
+    height: 15vh;
+    border-radius:10px;
+    margin-top:2%;
+    margin:0 auto;
+    
+    .shopLeft, .shopRight {
+        @include displayRow();
+    }
+    .shopLeft {
+        width: 50%;
+    }
+    .shopRight {
+        @include border();
+        width: 30%;
+        height: 10vh;
+        background-color: $secondary;
+        margin-right: 3%;
+        
+        a {
+            @include mainFont();
+            color:black;
+        }
+    }
+
+    a {
+        color:$body;
+        font-family: 'Bad Script', cursive;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    a:hover{
+        color:$hover;
+        font-weight:500;
+        font-size:19px;
+        background-color: $body;
+        padding: 1%;
+        border-radius: 5px;
+    }
+}
+
+
+.shop {
+    padding-top: 1%;
+}
+
+.shop main {
+    width: 75%;
+    margin:0 auto;
+}
