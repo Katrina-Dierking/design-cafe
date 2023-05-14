@@ -7,7 +7,7 @@ const Layout = ({title, children}) => {
     return (
         <section className='layout'>
             <Header />
-            <h1>{title}</h1>
+            <h1>{title.toUpperCase()}</h1>
             <main>{children}</main>
             <Footer />
         </section>
