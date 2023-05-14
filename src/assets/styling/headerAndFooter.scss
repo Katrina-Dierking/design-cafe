@@ -1,0 +1,17 @@
+@import './mixins';
+@import './variables';
+
+header, footer {
+    @include boxShadow();
+    @include displayRow();
+    background-color: $secondary;
+    color:$primary;
+    width: 100%;
+
+}
+
+footer {
+    bottom:0;
+    position:absolute;
+    height:15vh;
+}

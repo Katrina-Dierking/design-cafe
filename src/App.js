@@ -1,10 +1,12 @@
 
-import './App.css';
+import './App.scss';
+import Home from './views/home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Queen Bean Design Cafe</h1>
+    
+      <Home />
     </div>
   );
 }
