@@ -8,8 +8,8 @@ const ShopHome = () => {
 
   return (
     <section className='shop'>
-
-    
+        <div className='shopLeft'></div>
+        <div className='shopRight'></div>
       <Footer />
     
     </section>
