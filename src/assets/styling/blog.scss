@@ -1,11 +1,15 @@
 .postCard {
-    min-width: 100vw;
-    background-color: red;
+    min-width: 85vw;
     text-align: left;
+    border: 1px solid lightgrey;
+    padding: 1%;
 
     p, h1{
         color:black;
         width: 80%;
-        background-color: yellow;
     }
+
+}
+.postCard h1{
+    color:teal;
 }
