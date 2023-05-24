@@ -1,0 +1,12 @@
+@import './mixins';
+@import './variables';
+
+nav {
+ @include displayRow();
+ width: 60%;
+ 
+    a{
+        color:white;
+        text-decoration: none;
+    }
+}
