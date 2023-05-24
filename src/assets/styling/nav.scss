@@ -1,7 +1,7 @@
 @import './mixins';
 @import './variables';
 
-nav {
+nav, .bottomNav {
  @include displayRow();
  width: 60%;
  
@@ -9,4 +9,8 @@ nav {
         color:white;
         text-decoration: none;
     }
+}
+
+.bottomNav {
+    width: 30%;
 }

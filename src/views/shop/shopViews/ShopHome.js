@@ -8,6 +8,7 @@ const ShopHome = () => {
 
   return (
     <section className='shop'>
+    <h2>SHOP</h2>
         <div className='shopLeft'></div>
         <div className='shopRight'></div>
       <Footer />
