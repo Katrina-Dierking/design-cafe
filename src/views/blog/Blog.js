@@ -1,10 +1,22 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
+import {blogs} from './data'
+import BlogPost from './BlogPost'
+
 
 const Blog = () => {
   return (
     <Layout title="blog">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non atque labore voluptatibus rerum iure similique, molestias provident fuga eaque exercitationem, eum consectetur, aliquam alias officia inventore architecto. Iusto, neque.</p>
+      {blogs.map((post, index) => (
+        <BlogPost 
+          props={post}
+          key={index}
+          category={post.category}
+          title={post.title}
+          body={post.body}
+
+        />
+      ))}
     </Layout>
   )
 }

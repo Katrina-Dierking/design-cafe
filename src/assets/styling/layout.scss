@@ -4,6 +4,10 @@
 .layout {
     width: 100%;
     @include displayCol();
-    align-items: center;
+    align-items: left;
     background-color: $primary;
+
+    .layout>h1, main{
+        padding: 0 3%;
+    }
 }
