@@ -1,27 +1,33 @@
 @import '../../../assets/styling/mixins';
 @import '../../../assets/styling/variables';
 
-.shopnav {
+
+
+.shopNav {
     @include displayRow();
-    justify-content: space-between;
+    justify-content: space-around;
     width:100%;
-    background-color: $primary;
+    background-color: red;
+    padding: 0 5%;
     height: 15vh;
-    border-radius:10px;
     margin-top:2%;
-    margin:0 auto;
+
     
     .shopLeft, .shopRight {
         @include displayRow();
     }
     .shopLeft {
         width: 50%;
+        a {
+            color:black;
+        }
+    
     }
     .shopRight {
         @include border();
-        width: 30%;
+        width: 10%;
         height: 10vh;
-        background-color: $secondary;
+        background-color: beige;
         margin-right: 3%;
         
         a {
