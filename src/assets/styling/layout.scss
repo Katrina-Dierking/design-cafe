@@ -6,8 +6,12 @@
     @include displayCol();
     align-items: left;
     background-color: $primary;
+}
 
-    .layout>h1, main{
-        padding: 0 3%;
-    }
+.layout>h1 {
+   margin:0 auto;
+   padding:3% 0;
+}
+.layout main{
+    padding: 0 5%;
 }
