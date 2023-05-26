@@ -17,7 +17,8 @@ import {
   Pens,
   Pins,
   SweetShop, 
-  Vinyls
+  Vinyls, 
+  Straws
 } from './views/shop/index'
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/pins" element={<Pins />}/>
           <Route path="/lovemugs" element={<LoveMugs />} />
           <Route path="/vinyls" element={<Vinyls />} />
+          <Route path="/straws" element={<Straws />} />
         </Routes>
       </BrowserRouter>
     </div>

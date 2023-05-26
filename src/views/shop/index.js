@@ -4,3 +4,4 @@ export { default as Vinyls } from "../shop/shopViews/Vinyls";
 export { default as Pins } from "../shop/shopViews/Pins";
 export { default as Pens } from "../shop/shopViews/Pens";
 export { default as LoveMugs } from "../shop/shopViews/LoveMugs";
+export {default as Straws} from "../shop/shopViews/Straws";

@@ -7,19 +7,19 @@
     @include displayRow();
     justify-content: space-around;
     width:100%;
-    background-color: red;
     padding: 0 5%;
     height: 15vh;
     margin-top:2%;
+    background-color: black;
 
     
     .shopLeft, .shopRight {
         @include displayRow();
     }
     .shopLeft {
-        width: 50%;
+        width: 70%;
         a {
-            color:black;
+            color:white;
         }
     
     }
@@ -40,7 +40,8 @@
         color:$body;
         font-family: 'Bad Script', cursive;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 16px;
+        padding: 0 1%;
     }
     a:hover{
         color:$hover;
@@ -60,4 +61,5 @@
 .shop main {
     width: 75%;
     margin:0 auto;
+    padding: 5% 0;
 }
