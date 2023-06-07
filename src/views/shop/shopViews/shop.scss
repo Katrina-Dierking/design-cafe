@@ -3,12 +3,14 @@
 
 .shop h2 {
     font-family: 'Inspiration', cursive;
+    font-weight: 600;
     font-size: 52px;
     color:teal;
 }
 
 .shopNav {
     @include displayRow();
+    @include boxShadow();
     justify-content: space-evenly;
     width:100%;
     padding: 0 1%;
@@ -61,6 +63,13 @@
 
 .shop {
     padding-top: 1%;
+
+    .titleBox {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .shop main {
@@ -76,4 +85,9 @@
 .shopIcon:hover {
     margin-top:-4%;
     height: 90px;
+}
+
+.coffee {
+    height: 30px;
+    padding: 0 1%;
 }
