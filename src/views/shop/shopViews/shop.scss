@@ -1,65 +1,6 @@
 @import '../../../assets/styling/mixins';
 @import '../../../assets/styling/variables';
 
-.shop h2 {
-    font-family: 'Inspiration', cursive;
-    font-weight: 600;
-    font-size: 52px;
-    color:teal;
-}
-
-.shopNav {
-    @include displayRow();
-    @include boxShadow();
-    justify-content: space-evenly;
-    width:100%;
-    padding: 0 1%;
-    height: 15vh;
-    margin-top:2%;
-    background-color: lightyellow;
-
-    
-    .shopLeft, .shopRight {
-        @include displayRow();
-    }
-    .shopLeft {
-        width: 40%;
-        margin: 0 auto;
-        a {
-            color:white;
-        }
-    
-    }
-    .shopRight {
-        @include border();
-        width: 5%;
-        height: 5vh;
-        background-color: lightgrey;
-        margin-right: 5%;
-        
-        a {
-            @include mainFont();
-            color:black;
-        }
-    }
-
-    a {
-        color:$body;
-        font-family: 'Bad Script', cursive;
-        text-decoration: none;
-        font-size: 16px;
-        padding: 0 1%;
-    }
-    a:hover{
-        color:$hover;
-        font-weight:500;
-        font-size:19px;
-        // background-color: $body;
-        padding: 1%;
-        border-radius: 5px;
-    }
-}
-
 
 .shop {
     padding-top: 1%;
@@ -72,19 +13,92 @@
     }
 }
 
+.shop h2 {
+    font-family: 'Inspiration', cursive;
+    font-weight: 600;
+    font-size: 52px;
+    color:teal;
+}
+
+.shopNav {
+    @include displayRow();
+    // @include boxShadow();
+    justify-content: space-evenly;
+    width:98vw;
+    padding: 2% 1%;
+    height: 15vh;
+    margin-top:2%;
+    // background-color: lightyellow;
+
+    .shopLeft, .shopRight {
+        @include displayRow();
+    }
+    .shopLeft {
+        width: 40%;
+        margin: 0 auto;
+    
+    }
+}
+
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: lightyellow; }
+    80%  { background: pink; }
+    100% { background: teal; }
+}
+.shopRight {
+    @include border();
+    @include boxShadow();
+    width: 10%;
+    height: 5vh;
+    background: pink; /* Fallback */
+    animation: color s infinite linear;
+    text-align: center;
+    margin-right: 5%;
+    border-radius: 10px;
+    
+    p {
+        @include mainFont();
+        color:black;
+    }
+}
+
+
+
+
+.shopIcon {
+height: 75px;
+border-radius: 50%;
+border: 1px solid teal;
+padding: 5%;
+}
+
+
+.shoplinks .shopName {
+    background: -webkit-linear-gradient(black, teal);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inspiration', cursive;
+    font-size: 38px;
+    margin-top: -5%;
+}
+
+.shopIcon:hover {
+    margin-top:-2%;
+    height: 90px;
+    @include boxShadow();
+    
+    .shoplinks .shopName {
+        color:black;
+    }
+    
+}
 .shop main {
     width: 75%;
     margin:0 auto;
     padding: 5% 0;
-}
-
-.shopIcon {
-    height: 75px;
-}
-
-.shopIcon:hover {
-    margin-top:-4%;
-    height: 90px;
 }
 
 .coffee {

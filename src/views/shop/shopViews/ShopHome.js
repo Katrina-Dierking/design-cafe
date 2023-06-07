@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Footer from '../../../components/footer/Footer'
 import './shop.scss'
 import creative from '../../../assets/images/creative-design.png'
@@ -13,29 +13,41 @@ const ShopHome = () => {
 
   return (
     <section className="shop">
-      <div className='titleBox'>
+      <div className="titleBox">
         <img src={coffee} className="coffee" alt="coffee bean" />
         <h2>Queen Bean Shop</h2>
         <img src={coffee} className="coffee" alt="coffee bean" />
       </div>
       <nav className="shopNav">
         <div className="shopLeft">
-          <Link to="/sweetshop">
-            <img src={cupcake} className="shopIcon" alt="the sweet tooth"></img>
-          </Link>
-          <img src={soap} className="shopIcon" alt="The sweet and salty soap" />{" "}
-          <img
-            src={creative}
-            className="shopIcon"
-            alt="The sweet and salty soap box"
-          />
-          <img
-            src={gift}
-            className="shopIcon"
-            alt="The sweet and salty soap box"
-          />
+          <div className="shoplinks">
+            <img src={cupcake} className="shopIcon" alt="the sweet tooth" />
+            <p className="shopName">sweet tooth</p>
+          </div>
+
+          <div className="shoplinks">
+            <img
+              src={soap}
+              className="shopIcon"
+              alt="The sweet and salty soap"
+            />
+            <p className="shopName">soap box</p>
+          </div>
+
+          <div className="shoplinks">
+            <img src={creative} className="shopIcon" alt="code cafe" />
+            <p className="shopName">code cafe</p>
+          </div>
+
+          <div className="shoplinks">
+            <img src={gift} className="shopIcon" alt="gift shop" />
+            <p className="shopName">gift shop</p>
+          </div>
         </div>
-        <div className="shopRight">cart</div>
+
+        <div className="shopRight">
+          <p>cart</p>
+        </div>
       </nav>
       <main>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
