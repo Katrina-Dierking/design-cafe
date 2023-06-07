@@ -17,6 +17,9 @@ const ShopHome = () => {
         <img src={coffee} className="coffee" alt="coffee bean" />
         <h2>Queen Bean Shop</h2>
         <img src={coffee} className="coffee" alt="coffee bean" />
+        <div className="shopRight">
+          <p>cart</p>
+        </div>
       </div>
       <nav className="shopNav">
         <div className="shopLeft">
@@ -45,9 +48,6 @@ const ShopHome = () => {
           </div>
         </div>
 
-        <div className="shopRight">
-          <p>cart</p>
-        </div>
       </nav>
       <main>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente

@@ -9,7 +9,7 @@ const Header = () => {
         <h2>
           Queen Bean <span>Design</span> Cafe
         </h2>
-        <p>Let's build something great together!</p>
+        <p>Let's create something great together!</p>
       </div>
 
       <Nav />

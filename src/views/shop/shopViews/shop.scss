@@ -48,13 +48,14 @@
     80%  { background: pink; }
     100% { background: teal; }
 }
+
 .shopRight {
     @include border();
     @include boxShadow();
-    width: 10%;
+    width: 7%;
     height: 5vh;
     background: pink; /* Fallback */
-    animation: color s infinite linear;
+    animation: color 18s infinite linear;
     text-align: center;
     margin-right: 5%;
     border-radius: 10px;
