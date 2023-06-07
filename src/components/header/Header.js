@@ -5,10 +5,16 @@ import Nav from '../navigation/Nav'
 const Header = () => {
   return (
     <header>
-      <h2>Queen Bean <span>Design Cafe</span></h2>
+      <div>
+        <h2>
+          Queen Bean <span>Design</span> Cafe
+        </h2>
+        <p>Let's build something great together!</p>
+      </div>
+
       <Nav />
     </header>
-  )
+  );
 }
 
 export default Header

@@ -1,23 +1,28 @@
 @import '../../../assets/styling/mixins';
 @import '../../../assets/styling/variables';
 
-
+.shop h2 {
+    font-family: 'Inspiration', cursive;
+    font-size: 52px;
+    color:teal;
+}
 
 .shopNav {
     @include displayRow();
-    justify-content: space-around;
+    justify-content: space-evenly;
     width:100%;
-    padding: 0 5%;
+    padding: 0 1%;
     height: 15vh;
     margin-top:2%;
-    background-color: black;
+    background-color: lightyellow;
 
     
     .shopLeft, .shopRight {
         @include displayRow();
     }
     .shopLeft {
-        width: 70%;
+        width: 40%;
+        margin: 0 auto;
         a {
             color:white;
         }
@@ -25,10 +30,10 @@
     }
     .shopRight {
         @include border();
-        width: 10%;
-        height: 10vh;
-        background-color: beige;
-        margin-right: 3%;
+        width: 5%;
+        height: 5vh;
+        background-color: lightgrey;
+        margin-right: 5%;
         
         a {
             @include mainFont();
@@ -47,7 +52,7 @@
         color:$hover;
         font-weight:500;
         font-size:19px;
-        background-color: $body;
+        // background-color: $body;
         padding: 1%;
         border-radius: 5px;
     }
@@ -62,4 +67,13 @@
     width: 75%;
     margin:0 auto;
     padding: 5% 0;
+}
+
+.shopIcon {
+    height: 75px;
+}
+
+.shopIcon:hover {
+    margin-top:-4%;
+    height: 90px;
 }

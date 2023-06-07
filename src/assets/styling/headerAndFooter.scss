@@ -10,9 +10,20 @@ header, footer {
 
 }
 
-header h2{
+
+header h2, header p{
     font-family: 'Cinzel', serif;
+    color:black;
 }
+
+header span{
+    font-family: 'Inspiration', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    color:pink;
+}
+
+
 
 footer {
     // bottom:0;

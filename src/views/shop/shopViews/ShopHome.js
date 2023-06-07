@@ -2,16 +2,24 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../../../components/footer/Footer'
 import './shop.scss'
+import creative from '../../../assets/images/creative-design.png'
+import cupcake from '../../../assets/images/cupcake.png'
+import soap from '../../../assets/images/soap.png'
+import gift from '../../../assets/images/gift.png'
 
 const ShopHome = () => {
 
 
   return (
     <section className='shop'>
-    <h2>SHOP</h2>
+    <h2>~ Queen Bean Shop ~</h2>
     <nav className='shopNav'>
         <div className='shopLeft'>
-            <Link to="/sweetshop">sweet shop</Link>
+            <Link to="/sweetshop"><img src={cupcake} className='shopIcon' alt='the sweet tooth' ></img></Link>
+            <img src={soap} className='shopIcon' alt='The sweet and salty soap'/>            <img src={creative} className='shopIcon' alt='The sweet and salty soap box' />
+            <img src={gift} className='shopIcon' alt='The sweet and salty soap box' />
+            
+        
             </div>
             <div className='shopRight'>cart</div>
             </nav>
