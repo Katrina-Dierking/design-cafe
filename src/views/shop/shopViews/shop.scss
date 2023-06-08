@@ -13,6 +13,15 @@
     }
 }
 
+.shopName {
+    display:none;
+}
+
+hr {
+    width: 20%;
+    color:teal;
+}
+
 .shop h2 {
     font-family: 'Inspiration', cursive;
     font-weight: 600;
@@ -77,25 +86,26 @@ padding: 5%;
 }
 
 
-.shoplinks .shopName {
-    background: -webkit-linear-gradient(black, teal);
+
+.shopName {
+    display:none;
+}
+.shopIcon:hover {
+    margin-top:-1%;
+    @include boxShadow();
+    
+}
+.shopIcon:hover + .shopName {
+    background: -webkit-linear-gradient(hotpink, teal);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Inspiration', cursive;
     font-size: 38px;
+    font-weight: 700;
     margin-top: -5%;
+    display:block;
 }
 
-.shopIcon:hover {
-    margin-top:-2%;
-    height: 90px;
-    @include boxShadow();
-    
-    .shoplinks .shopName {
-        color:black;
-    }
-    
-}
 .shop main {
     width: 75%;
     margin:0 auto;

@@ -18,9 +18,10 @@ const ShopHome = () => {
         <h2>Queen Bean Shop</h2>
         <img src={coffee} className="coffee" alt="coffee bean" />
         <div className="shopRight">
-          <p>cart</p>
+          <p >cart</p>
         </div>
-      </div>
+        </div>
+        <hr></hr>
       <nav className="shopNav">
         <div className="shopLeft">
           <div className="shoplinks">
