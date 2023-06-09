@@ -5,3 +5,4 @@ export { default as Contact } from "../views/contact/Contact";
 export { default as Hives } from "../views/hives/Hives";
 export { default as Shop } from "../views/shop/shopViews/ShopHome";
 export { default as Login} from "../views/login/Login";
+export {default as University} from "../views/university/University"

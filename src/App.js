@@ -8,7 +8,8 @@ import {
   Contact,
   Login,
   Shop,
-  Hives
+  Hives, 
+  University
 } from './views/index'
 
 import {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/lovemugs" element={<LoveMugs />} />
           <Route path="/vinyls" element={<Vinyls />} />
           <Route path="/straws" element={<Straws />} />
+          <Route path="/university" element={<University />} />
         </Routes>
       </BrowserRouter>
     </div>
