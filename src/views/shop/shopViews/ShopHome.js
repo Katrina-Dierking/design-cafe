@@ -1,12 +1,11 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 import Footer from '../../../components/footer/Footer'
 import './shop.scss'
-import creative from '../../../assets/images/creative-design.png'
+import globe from '../../../assets/images/globe.png'
 import cupcake from '../../../assets/images/cupcake.png'
 import soap from '../../../assets/images/soap.png'
 import gift from '../../../assets/images/gift.png'
-import coffee from '../../../assets/images/coffee-beans.png'
+import queen from '../../../assets/images/queen2.png'
 
 const ShopHome = () => {
 
@@ -14,43 +13,41 @@ const ShopHome = () => {
   return (
     <section className="shop">
       <div className="titleBox">
-        <img src={coffee} className="coffee" alt="coffee bean" />
-        <h2>Queen Bean Shop</h2>
-        <img src={coffee} className="coffee" alt="coffee bean" />
+      <img src={queen} alt="queen" />
+      
+      <nav className="shopNav">
+      <div className="shopLeft">
+      <div className="shoplinks">
+      <img src={cupcake} className="shopIcon" alt="the sweet tooth" />
+        <p className="shopName">the sweet tooth</p>
+        </div>
+        
+        <div className="shoplinks">
+        <img
+        src={soap}
+        className="shopIcon"
+        alt="The sweet and salty soap"
+        />
+        <p className="shopName">sweet & salty <br/>soap box</p>
+        </div>
+        
+        <div className="shoplinks">
+        <img src={globe} className="shopIcon" alt="globe" />
+        <p className="shopName">code creations</p>
+        </div>
+        
+        <div className="shoplinks">
+        <img src={gift} className="shopIcon" alt="gift shop" />
+        <p className="shopName">gift shop</p>
+        </div>
+        </div>
         <div className="shopRight">
           <p >cart</p>
         </div>
+        
+        </nav>
         </div>
-        <hr></hr>
-      <nav className="shopNav">
-        <div className="shopLeft">
-          <div className="shoplinks">
-            <img src={cupcake} className="shopIcon" alt="the sweet tooth" />
-            <p className="shopName">sweet tooth</p>
-          </div>
-
-          <div className="shoplinks">
-            <img
-              src={soap}
-              className="shopIcon"
-              alt="The sweet and salty soap"
-            />
-            <p className="shopName">soap box</p>
-          </div>
-
-          <div className="shoplinks">
-            <img src={creative} className="shopIcon" alt="code cafe" />
-            <p className="shopName">code cafe</p>
-          </div>
-
-          <div className="shoplinks">
-            <img src={gift} className="shopIcon" alt="gift shop" />
-            <p className="shopName">gift shop</p>
-          </div>
-        </div>
-
-      </nav>
-      <main>
+        <main>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
         similique quidem expedita porro beatae nesciunt nemo praesentium, cum
         minima omnis minus voluptates adipisci pariatur dicta architecto totam

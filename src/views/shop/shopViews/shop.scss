@@ -9,7 +9,14 @@
         display:flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
+        padding: 2%;
+         background: rgb(10,90,179);
+background: linear-gradient(227deg, rgba(10,90,179,1) 0%, rgba(33,126,193,1) 25%, rgba(66,179,213,1) 64%, rgba(0,151,178,1) 100%);
+
+        img {
+            height: 100px;
+        }
     }
 }
 
@@ -79,9 +86,10 @@ hr {
 
 
 .shopIcon {
-height: 75px;
+max-height: 75px;
 border-radius: 50%;
 border: 1px solid teal;
+background-color: white;
 padding: 5%;
 }
 
@@ -96,13 +104,14 @@ padding: 5%;
     
 }
 .shopIcon:hover + .shopName {
-    background: -webkit-linear-gradient(hotpink, teal);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: -webkit-linear-gradient(hotpink, teal);
+    // background-clip: text;
+    // -webkit-text-fill-color: transparent;
     font-family: 'Inspiration', cursive;
+    color:yellow;
     font-size: 38px;
-    font-weight: 700;
-    margin-top: -5%;
+    font-weight: 500;
+    margin-top: -2%;
     display:block;
 }
 

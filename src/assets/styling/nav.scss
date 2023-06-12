@@ -1,6 +1,7 @@
 @import './mixins';
 @import './variables';
 
+
 nav, .bottomNav {
  @include displayRow();
  width: 60%;
@@ -11,10 +12,10 @@ nav, .bottomNav {
          font-family: 'Cinzel', serif;
     }
 
-    a:hover{
+    a:hover {
         color:#FFD011;
         font-size: 18px;
-    }
+}
 }
 
 .bottomNav {

@@ -6,15 +6,27 @@ const Nav = () => {
   return (
     <nav>
 
-    <Link to="/">HOME</Link>
-    <Link to="/about">ABOUT</Link>
-    <Link to="/blog">BLOG</Link>
-    <Link to="/hives">HIVES</Link>
-    <Link to="/shop">SHOP</Link>
-    <Link to="/university">QB UNIVERSITY</Link>
-
+        <Link to="/">
+          HOME
+          </Link>
+  
+      <Link to="/about" >
+        ABOUT
+      </Link>
+      <Link to="/blog" >
+        BLOG
+      </Link>
+      <Link to="/hives" >
+        HIVES
+      </Link>
+      <Link to="/shop" >
+        SHOP
+      </Link>
+      <Link to="/university" >
+        QB U
+      </Link>
     </nav>
-    );
+  );
   }
   
   export default Nav
