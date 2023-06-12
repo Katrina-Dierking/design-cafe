@@ -1,32 +1,37 @@
 @import './mixins';
 @import './variables';
 
+header {
+        @include displayRow();
+}
 header, footer {
     @include boxShadow();
-    @include displayRow();
-    background-color: $secondary;
+    background-color: #0097B2;
     color:$primary;
     width: 100%;
 
 }
 
 
-header h2, header p{
+header p{
     font-family: 'Cinzel', serif;
     color:black;
+  margin-top:2%;
 }
 
-header span{
-    font-family: 'Inspiration', cursive;
-    font-size: 48px;
-    font-weight: 400;
-    color:pink;
+header img {
+    height: 100px;
+    padding-top:2%;
 }
-
 
 
 footer {
     // bottom:0;
     // position: absolute;
     height:15vh;
+    @include displayCol();
+    align-items:center;
+}
+footer p{
+    color:black;
 }

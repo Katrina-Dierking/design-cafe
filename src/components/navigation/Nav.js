@@ -11,7 +11,7 @@ const Nav = () => {
     <Link to="/blog">BLOG</Link>
     <Link to="/hives">HIVES</Link>
     <Link to="/shop">SHOP</Link>
-    <Link to="/university">CAFE UNIVERSITY</Link>
+    <Link to="/university">QB UNIVERSITY</Link>
 
     </nav>
     );
